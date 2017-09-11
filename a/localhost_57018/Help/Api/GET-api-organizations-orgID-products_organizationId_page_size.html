@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from localhost:57018/Help/Api/GET-api-organizations-orgID-products_organizationId_page_size by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>GET api/organizations/{orgID}/products?organizationId={organizationId}&amp;page={page}&amp;size={size}</title>
+    
+</head>
+<body>
+
+
+
+<link type="text/css" href="../../Areas/HelpPage/HelpPage.css" rel="stylesheet"/>
+<div id="body" class="help-page">
+    <section class="featured">
+        <div class="content-wrapper">
+            <p>
+                <a href="../../Help.html">Help Page Home</a>
+            </p>
+        </div>
+    </section>
+    <section class="content-wrapper main-content clear-fix">
+        
+<h1>GET api/organizations/{orgID}/products?organizationId={organizationId}&amp;page={page}&amp;size={size}</h1>
+<div>
+    <p>Get all products belonging to a given organization.</p>
+
+    <h2>Request Information</h2>
+
+    <h3>URI Parameters</h3>
+        <table class="help-page-table">
+        <thead>
+        <tr>
+            <th>Name</th><th>Description</th><th>Type</th><th>Additional information</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="parameter-name">organizationId</td>
+                <td class="parameter-documentation">
+                    <p>The ID of the organization whose products you want to retrieve.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">page</td>
+                <td class="parameter-documentation">
+                    <p>What page of records you&#39;d like to retrieve.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">size</td>
+                <td class="parameter-documentation">
+                    <p>How many records do you want per page.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">orgID</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h3>Body Parameters</h3>
+
+    <p></p>
+
+        <p>None.</p>
+
+
+    <h2>Response Information</h2>
+
+    <h3>Resource Description</h3>
+
+    <p>A list of Products.</p>
+
+        Collection of <a href="../ResourceModel5e21.html?modelName=ApiProductMaster">ApiProductMaster</a>
+
+
+    <table class="help-page-table">
+        <thead>
+        <tr>
+            <th>Name</th><th>Description</th><th>Type</th><th>Additional information</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="parameter-name">Id</td>
+                <td class="parameter-documentation">
+                    <p>Product ID</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Manufacturer</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    <a href="../ResourceModel95c5.html?modelName=ApiManufacturer">ApiManufacturer</a>
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Manufacturer</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    <a href="../ResourceModel9090.html?modelName=ApiProduct">ApiProduct</a>
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductItem</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    <a href="../ResourceModel1a93.html?modelName=ApiProductItem">ApiProductItem</a>
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">MachineInventory</td>
+                <td class="parameter-documentation">
+                    <p>Field used to build reflexive relationship with MachineInvetory</p>
+                </td>
+                <td class="parameter-type">
+                    <a href="../ResourceModelc6d3.html?modelName=DbMachineInventory">DbMachineInventory</a>
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">OrganizationId</td>
+                <td class="parameter-documentation">
+                    <p>Organization ID</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">MachineInventoryId</td>
+                <td class="parameter-documentation">
+                    <p>id of belongsTo MachineInventory, used for generating JSON API relationship links</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+        <h3>Response Formats</h3>
+
+<div>
+        <h4 class="sample-header">application/json, text/json, application/xml, text/xml</h4>
+        <div class="sample-content">
+            <span>
+                <b>Sample:</b>
+            </span>
+                    <p>Sample not available.</p>
+
+        </div>
+</div>
+</div>
+
+    </section>
+</div>
+
+</body>
+
+<!-- Mirrored from localhost:57018/Help/Api/GET-api-organizations-orgID-products_organizationId_page_size by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:46 GMT -->
+</html>

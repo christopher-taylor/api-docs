@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from localhost:57018/Help/Api/GET-api-organizations-orgID-passports-passportId_organizationId by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>GET api/organizations/{orgID}/passports/{passportId}?organizationId={organizationId}</title>
+    
+</head>
+<body>
+
+
+
+<link type="text/css" href="../../Areas/HelpPage/HelpPage.css" rel="stylesheet"/>
+<div id="body" class="help-page">
+    <section class="featured">
+        <div class="content-wrapper">
+            <p>
+                <a href="../../Help.html">Help Page Home</a>
+            </p>
+        </div>
+    </section>
+    <section class="content-wrapper main-content clear-fix">
+        
+<h1>GET api/organizations/{orgID}/passports/{passportId}?organizationId={organizationId}</h1>
+<div>
+    <p>Get a product by product ID</p>
+
+    <h2>Request Information</h2>
+
+    <h3>URI Parameters</h3>
+        <table class="help-page-table">
+        <thead>
+        <tr>
+            <th>Name</th><th>Description</th><th>Type</th><th>Additional information</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="parameter-name">organizationId</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">passportId</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">orgID</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h3>Body Parameters</h3>
+
+    <p></p>
+
+        <p>None.</p>
+
+
+    <h2>Response Information</h2>
+
+    <h3>Resource Description</h3>
+
+    <p></p>
+
+<a href="../ResourceModel64e7.html?modelName=ApiPassport">ApiPassport</a>
+    <table class="help-page-table">
+        <thead>
+        <tr>
+            <th>Name</th><th>Description</th><th>Type</th><th>Additional information</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="parameter-name">Id</td>
+                <td class="parameter-documentation">
+                    <p>Primary Internal ID</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">OrganizationId</td>
+                <td class="parameter-documentation">
+                    <p>Internal ID of the organization this passport belongs to</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">LanguageId</td>
+                <td class="parameter-documentation">
+                    <p>ID of the preferred language associated with this passport</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ContactInformation</td>
+                <td class="parameter-documentation">
+                    <p>Contact information associated with this passport</p>
+                </td>
+                <td class="parameter-type">
+                    <a href="../ResourceModel0ad1.html?modelName=DbPerson">DbPerson</a>
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Number</td>
+                <td class="parameter-documentation">
+                    <p>Passport&#39;s external unique identifier, usually employee number</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                            <p>String length: inclusive between 1 and 100</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Badge</td>
+                <td class="parameter-documentation">
+                    <p>Passport&#39;s external unique identifier, used if the number on their badge does not match the number field</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                            <p>String length: inclusive between 1 and 100</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">RequirePinChange</td>
+                <td class="parameter-documentation">
+                    <p>Indicates if the user needs to change their pin</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Status</td>
+                <td class="parameter-documentation">
+                    <p>Indicates the current status of this passport</p>
+                </td>
+                <td class="parameter-type">
+                    <a href="../ResourceModel17d1.html?modelName=PassportStatus">PassportStatus</a>
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">IgnoreFingerprint</td>
+                <td class="parameter-documentation">
+                    <p>Indicates if the fingerprint check should be skipped for this passport
+                Usually for users who have unusual fingerprints that cannot be read consistently
+                Falls back to PIN if available</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+        <h3>Response Formats</h3>
+
+<div>
+        <h4 class="sample-header">application/json</h4>
+        <div class="sample-content">
+            <span>
+                <b>Sample:</b>
+            </span>
+    <div class="warning-message-container">
+        <p>An exception has occurred while using the formatter &#39;JsonMediaTypeFormatter&#39; to generate sample for media type &#39;application/json&#39;. Exception message: Self referencing loop detected for property &#39;DbMachine&#39; with type &#39;VN.EF.Tool.DbMachine&#39;. Path &#39;ContactInformation.DbEmployees[0].DbOrganization.OrgCliIdFk[0].DbSites[0].DbMachines[0].DbSlots[0]&#39;.</p>
+    </div>
+    <pre>" + filterContext.Exception.StackTrace + "</pre>
+
+        </div>
+        <h4 class="sample-header">text/json</h4>
+        <div class="sample-content">
+            <span>
+                <b>Sample:</b>
+            </span>
+    <div class="warning-message-container">
+        <p>An exception has occurred while using the formatter &#39;JsonMediaTypeFormatter&#39; to generate sample for media type &#39;text/json&#39;. Exception message: Self referencing loop detected for property &#39;DbMachine&#39; with type &#39;VN.EF.Tool.DbMachine&#39;. Path &#39;ContactInformation.DbEmployees[0].DbOrganization.OrgCliIdFk[0].DbSites[0].DbMachines[0].DbSlots[0]&#39;.</p>
+    </div>
+    <pre>" + filterContext.Exception.StackTrace + "</pre>
+
+        </div>
+        <h4 class="sample-header">application/xml</h4>
+        <div class="sample-content">
+            <span>
+                <b>Sample:</b>
+            </span>
+    <div class="warning-message-container">
+        <p>An exception has occurred while using the formatter &#39;XmlMediaTypeFormatter&#39; to generate sample for media type &#39;application/xml&#39;. Exception message: Object graph for type &#39;System.Collections.Generic.List`1[[VN.EF.Tool.DbEmployee, VN.EF.Tool, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]&#39; contains cycles and cannot be serialized if reference tracking is disabled.</p>
+    </div>
+    <pre>" + filterContext.Exception.StackTrace + "</pre>
+
+        </div>
+        <h4 class="sample-header">text/xml</h4>
+        <div class="sample-content">
+            <span>
+                <b>Sample:</b>
+            </span>
+    <div class="warning-message-container">
+        <p>An exception has occurred while using the formatter &#39;XmlMediaTypeFormatter&#39; to generate sample for media type &#39;text/xml&#39;. Exception message: Object graph for type &#39;System.Collections.Generic.List`1[[VN.EF.Tool.DbEmployee, VN.EF.Tool, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]&#39; contains cycles and cannot be serialized if reference tracking is disabled.</p>
+    </div>
+    <pre>" + filterContext.Exception.StackTrace + "</pre>
+
+        </div>
+</div>
+</div>
+
+    </section>
+</div>
+
+</body>
+
+<!-- Mirrored from localhost:57018/Help/Api/GET-api-organizations-orgID-passports-passportId_organizationId by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:43 GMT -->
+</html>

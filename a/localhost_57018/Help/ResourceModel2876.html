@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from localhost:57018/Help/ResourceModel?modelName=ApiMachineInventory by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title></title>
+    
+</head>
+<body>
+
+<link type="text/css" href="../Areas/HelpPage/HelpPage.css" rel="stylesheet"/>
+<div id="body" class="help-page">
+    <section class="featured">
+        <div class="content-wrapper">
+            <p>
+                <a href="../Help.html">Help Page Home</a>
+            </p>
+        </div>
+    </section>
+    <h1>ApiMachineInventory</h1>
+    <p></p>
+    <section class="content-wrapper main-content clear-fix">
+            <table class="help-page-table">
+        <thead>
+        <tr>
+            <th>Name</th><th>Description</th><th>Type</th><th>Additional information</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="parameter-name">Id</td>
+                <td class="parameter-documentation">
+                    <p>Slot ID</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">MachineId</td>
+                <td class="parameter-documentation">
+                    <p>ID of the machine this inventory object belongs to</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Bin</td>
+                <td class="parameter-documentation">
+                    <p>Bin number</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductId</td>
+                <td class="parameter-documentation">
+                    <p>The product in the slot.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Product</td>
+                <td class="parameter-documentation">
+                    <p>product associated with this selection</p>
+                </td>
+                <td class="parameter-type">
+                    <a href="ResourceModel47e8.html?modelName=DbProduct">DbProduct</a>
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">OnHand</td>
+                <td class="parameter-documentation">
+                    <p>Number currently on hand</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">RefillTo</td>
+                <td class="parameter-documentation">
+                    <p>Refill to</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Depth</td>
+                <td class="parameter-documentation">
+                    <p>Slot/bin depth</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">AlertAt</td>
+                <td class="parameter-documentation">
+                    <p>Number of items to send alert at</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">RestockAt</td>
+                <td class="parameter-documentation">
+                    <p>When to refill slot/bin</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">NonConsignedCount</td>
+                <td class="parameter-documentation">
+                    <p>Non-Consigned Count</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">IsActive</td>
+                <td class="parameter-documentation">
+                    <p>If slot/bin is active</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    </section>
+</div>
+
+</body>
+
+<!-- Mirrored from localhost:57018/Help/ResourceModel?modelName=ApiMachineInventory by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:46 GMT -->
+</html>

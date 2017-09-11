@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from localhost:57018/Help/ResourceModel?modelName=ApiOrganization by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title></title>
+    
+</head>
+<body>
+
+<link type="text/css" href="../Areas/HelpPage/HelpPage.css" rel="stylesheet"/>
+<div id="body" class="help-page">
+    <section class="featured">
+        <div class="content-wrapper">
+            <p>
+                <a href="../Help.html">Help Page Home</a>
+            </p>
+        </div>
+    </section>
+    <h1>ApiOrganization</h1>
+    <p>Organizations are the current highest level of the location hierarchy, and are used to configure the primary
+                defaults for many settings.</p>
+    <section class="content-wrapper main-content clear-fix">
+            <table class="help-page-table">
+        <thead>
+        <tr>
+            <th>Name</th><th>Description</th><th>Type</th><th>Additional information</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="parameter-name">Id</td>
+                <td class="parameter-documentation">
+                    <p>Primary ID for this organization</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Name</td>
+                <td class="parameter-documentation">
+                    <p>Organization Name</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                            <p>String length: inclusive between 1 and 50</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ContactName</td>
+                <td class="parameter-documentation">
+                    <p>Contact Name - when creating an organization used to create default credentials</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                            <p>String length: inclusive between 1 and 50</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ContactEmail</td>
+                <td class="parameter-documentation">
+                    <p>Contact Email - when creating an organization, used to create default credentials</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                            <p>String length: inclusive between 1 and 50</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">IsPinRequired</td>
+                <td class="parameter-documentation">
+                    <p>Require PIN entry for machine access</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">AreLockersSupported</td>
+                <td class="parameter-documentation">
+                    <p>Lockers Supported at this organization</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">LockerHistoryEnabled</td>
+                <td class="parameter-documentation">
+                    <p>Organization has locker History</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">BillingAddress</td>
+                <td class="parameter-documentation">
+                    <p>Billing address associated with this organization</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 300</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">FreeVendEnabled</td>
+                <td class="parameter-documentation">
+                    <p>Enable Free Vending for this organization</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">VirtualMachinesEnabled</td>
+                <td class="parameter-documentation">
+                    <p>Virtual Machines enabled for this organization</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">AdjustCountForWebReturns</td>
+                <td class="parameter-documentation">
+                    <p>When using virtual machines, indicates if returns should update inventory counts</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">AccountIds</td>
+                <td class="parameter-documentation">
+                    <p>A list of the id&#39;s of accounts associated with this organization.</p>
+                </td>
+                <td class="parameter-type">
+                            Collection of integer
+
+
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Type</td>
+                <td class="parameter-documentation">
+                    <p>Type of this organization</p>
+                </td>
+                <td class="parameter-type">
+                    <a href="ResourceModelb874.html?modelName=OrganizationType">OrganizationType</a>
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    </section>
+</div>
+
+</body>
+
+<!-- Mirrored from localhost:57018/Help/ResourceModel?modelName=ApiOrganization by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:47 GMT -->
+</html>

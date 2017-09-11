@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from localhost:57018/Help/ResourceModel?modelName=DbMachineInventory by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title></title>
+    
+</head>
+<body>
+
+<link type="text/css" href="../Areas/HelpPage/HelpPage.css" rel="stylesheet"/>
+<div id="body" class="help-page">
+    <section class="featured">
+        <div class="content-wrapper">
+            <p>
+                <a href="../Help.html">Help Page Home</a>
+            </p>
+        </div>
+    </section>
+    <h1>DbMachineInventory</h1>
+    <p></p>
+    <section class="content-wrapper main-content clear-fix">
+            <table class="help-page-table">
+        <thead>
+        <tr>
+            <th>Name</th><th>Description</th><th>Type</th><th>Additional information</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="parameter-name">Id</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">MachineId</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Location</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">RestockTo</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Depth</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">OnHand</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Group</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ReorderAt</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">AlertAt</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">FreeCount</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">IsActive</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 1</p>
+                            <p>String length: inclusive between 0 and 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Label</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">IsReserved</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 1</p>
+                            <p>String length: inclusive between 0 and 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ReservationEnds</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    date
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ReservedForId</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">PickupCode</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 6</p>
+                            <p>String length: inclusive between 0 and 6</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">IsMultiSelectMode</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 1</p>
+                            <p>String length: inclusive between 0 and 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">RecountAt</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ContainsController</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 1</p>
+                            <p>String length: inclusive between 0 and 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">SelectionWidth</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">SelectionHeight</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Unit</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">IsLockedDown</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 1</p>
+                            <p>String length: inclusive between 0 and 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ContainsRecharger</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 1</p>
+                            <p>String length: inclusive between 0 and 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">LastStockedAt</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    date
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">UnitWeight</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ContainsLoadCell</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 1</p>
+                            <p>String length: inclusive between 0 and 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">IsLoadCellActive</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 1</p>
+                            <p>String length: inclusive between 0 and 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductId</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductDescription</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 100</p>
+                            <p>String length: inclusive between 0 and 100</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductRegroundFromProductId</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductPackageSize</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    decimal number
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductOrganizationId</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductGroupId</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductNumber</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 30</p>
+                            <p>String length: inclusive between 0 and 30</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductPackagePrice</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    decimal number
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductSupplierId</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductPackageCost</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    decimal number
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductRequireDualValidation</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 1</p>
+                            <p>String length: inclusive between 0 and 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductOfflineDispensable</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 1</p>
+                            <p>String length: inclusive between 0 and 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductSerialized</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 1</p>
+                            <p>String length: inclusive between 0 and 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductRechargable</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 1</p>
+                            <p>String length: inclusive between 0 and 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductRechargeTime</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductAges</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 4</p>
+                            <p>String length: inclusive between 0 and 4</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductDispenseAge</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductWidth</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductHeight</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductReturnable</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 1</p>
+                            <p>String length: inclusive between 0 and 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductLeaseLength</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductForceReturn</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    date
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductRechargerId</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductUniqueExternalIdentifier</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 50</p>
+                            <p>String length: inclusive between 0 and 50</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductHistoricalData1</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 50</p>
+                            <p>String length: inclusive between 0 and 50</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductHistoricalData2</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 50</p>
+                            <p>String length: inclusive between 0 and 50</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductCustomData1</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 50</p>
+                            <p>String length: inclusive between 0 and 50</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductCustomData2</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 50</p>
+                            <p>String length: inclusive between 0 and 50</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductVisible</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 1</p>
+                            <p>String length: inclusive between 0 and 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductManufacturerId</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductManufacturer</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 50</p>
+                            <p>String length: inclusive between 0 and 50</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductProductId</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductManufacturerNumber</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Max length: 30</p>
+                            <p>String length: inclusive between 0 and 30</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    </section>
+</div>
+
+</body>
+
+<!-- Mirrored from localhost:57018/Help/ResourceModel?modelName=DbMachineInventory by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:47 GMT -->
+</html>

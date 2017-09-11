@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from localhost:57018/Help/ResourceModel?modelName=ApiProductItem by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title></title>
+    
+</head>
+<body>
+
+<link type="text/css" href="../Areas/HelpPage/HelpPage.css" rel="stylesheet"/>
+<div id="body" class="help-page">
+    <section class="featured">
+        <div class="content-wrapper">
+            <p>
+                <a href="../Help.html">Help Page Home</a>
+            </p>
+        </div>
+    </section>
+    <h1>ApiProductItem</h1>
+    <p></p>
+    <section class="content-wrapper main-content clear-fix">
+            <table class="help-page-table">
+        <thead>
+        <tr>
+            <th>Name</th><th>Description</th><th>Type</th><th>Additional information</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="parameter-name">Id</td>
+                <td class="parameter-documentation">
+                    <p>Product ID and Primary Key.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Description</td>
+                <td class="parameter-documentation">
+                    <p>Description.</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                            <p>String length: inclusive between 1 and 100</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">IdOfProductItemWasRegroundFrom</td>
+                <td class="parameter-documentation">
+                    <p>Foreign key to productItem this was reground from, if applicable.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">QuantityPerPackage</td>
+                <td class="parameter-documentation">
+                    <p>Number of products per package.</p>
+                </td>
+                <td class="parameter-type">
+                    decimal number
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductId</td>
+                <td class="parameter-documentation">
+                    <p>Foreign Key to Product.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">OrganizationId</td>
+                <td class="parameter-documentation">
+                    <p>Foreign Key to managing organization.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">OrganizationGroupId</td>
+                <td class="parameter-documentation">
+                    <p>Foreign Key to the product grouping table.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Number</td>
+                <td class="parameter-documentation">
+                    <p>Managing organization&#39;s unique internal product number.</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                            <p>String length: inclusive between 1 and 30</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Price</td>
+                <td class="parameter-documentation">
+                    <p>Default product package price in dollars and cents.</p>
+                </td>
+                <td class="parameter-type">
+                    decimal number
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">SupplierId</td>
+                <td class="parameter-documentation">
+                    <p>Id used to indicate the product&#39;s supplier.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Cost</td>
+                <td class="parameter-documentation">
+                    <p>Package cost in dollars and cents.</p>
+                </td>
+                <td class="parameter-type">
+                    decimal number
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">RequiresDualVaildation</td>
+                <td class="parameter-documentation">
+                    <p>Indicates if the product should require multiple passport present to allow dispense.</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">AllowOfflineSale</td>
+                <td class="parameter-documentation">
+                    <p>Indicates if the product can be dispensed when the machine it&#39;s in is offline.</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">IsSerializable</td>
+                <td class="parameter-documentation">
+                    <p>Indicates if the product has a serialize number.</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Width</td>
+                <td class="parameter-documentation">
+                    <p>Approximate product width.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Height</td>
+                <td class="parameter-documentation">
+                    <p>Approximate product height.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">IsReturnable</td>
+                <td class="parameter-documentation">
+                    <p>Indicates if product is returnable.</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">LeaseLength</td>
+                <td class="parameter-documentation">
+                    <p>Length of time product can be out of the machine before it should be returned.  Not currently in use.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ForceReturn</td>
+                <td class="parameter-documentation">
+                    <p>Indicates if the product must be returned before more can be dispensed.  Currently not in use.</p>
+                </td>
+                <td class="parameter-type">
+                    date
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">UPC</td>
+                <td class="parameter-documentation">
+                    <p>UPC code associated with this product.</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Historical1</td>
+                <td class="parameter-documentation">
+                    <p>First of 2 fields used to hold Manging Organization data about the product.  This data is stored historically with
+                transactions.</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Historical2</td>
+                <td class="parameter-documentation">
+                    <p>Second of 2 fields used to hold Manging Organization data about the product.  This data is stored historically with
+                transactions.</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Custom1</td>
+                <td class="parameter-documentation">
+                    <p>First of 2 fields used to hold Manging Organization data about the product.  This data is NOT stored historically
+                with transactions.</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Custom2</td>
+                <td class="parameter-documentation">
+                    <p>Second of 2 fields used to hold Manging Organization data about the product.  This data is NOT stored historically
+                with transactions.</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">IsVisible</td>
+                <td class="parameter-documentation">
+                    <p>Indicates product visibility.  When false, the product will be removed from active selectability.</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    </section>
+</div>
+
+</body>
+
+<!-- Mirrored from localhost:57018/Help/ResourceModel?modelName=ApiProductItem by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:47 GMT -->
+</html>

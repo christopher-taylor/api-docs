@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from localhost:57018/Help/Api/GET-api-organizations-orgId-accounts_page_size by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>GET api/organizations/{orgId}/accounts?page={page}&amp;size={size}</title>
+    
+</head>
+<body>
+
+
+
+<link type="text/css" href="../../Areas/HelpPage/HelpPage.css" rel="stylesheet"/>
+<div id="body" class="help-page">
+    <section class="featured">
+        <div class="content-wrapper">
+            <p>
+                <a href="../../Help.html">Help Page Home</a>
+            </p>
+        </div>
+    </section>
+    <section class="content-wrapper main-content clear-fix">
+        
+<h1>GET api/organizations/{orgId}/accounts?page={page}&amp;size={size}</h1>
+<div>
+    <p>Get a list of accounts associated with an organization.</p>
+
+    <h2>Request Information</h2>
+
+    <h3>URI Parameters</h3>
+        <table class="help-page-table">
+        <thead>
+        <tr>
+            <th>Name</th><th>Description</th><th>Type</th><th>Additional information</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="parameter-name">orgId</td>
+                <td class="parameter-documentation">
+                    <p>The ID of the ApiOrganization whose accounts you&#39;d like to retrieve.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">page</td>
+                <td class="parameter-documentation">
+                    <p>The page of records you&#39;d like to retrieve</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Default value is 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">size</td>
+                <td class="parameter-documentation">
+                    <p>The number of records to retrieve per page.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Default value is 50</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h3>Body Parameters</h3>
+
+    <p></p>
+
+        <p>None.</p>
+
+
+    <h2>Response Information</h2>
+
+    <h3>Resource Description</h3>
+
+    <p>A list of accounts in an organization.</p>
+
+        Collection of <a href="../ResourceModel0101.html?modelName=ApiAccount">ApiAccount</a>
+
+
+    <table class="help-page-table">
+        <thead>
+        <tr>
+            <th>Name</th><th>Description</th><th>Type</th><th>Additional information</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="parameter-name">Id</td>
+                <td class="parameter-documentation">
+                    <p>Account ID</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ManagementOrganizationId</td>
+                <td class="parameter-documentation">
+                    <p>ID of the management organization this site belongs to</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ClientOrganizationId</td>
+                <td class="parameter-documentation">
+                    <p>ID of the client organization this site belongs to</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Name</td>
+                <td class="parameter-documentation">
+                    <p>Account name</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                            <p>String length: inclusive between 1 and 100</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ContactName</td>
+                <td class="parameter-documentation">
+                    <p>Full Name of the contact for this account</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                            <p>String length: inclusive between 1 and 50</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ContactEmail</td>
+                <td class="parameter-documentation">
+                    <p>Email Address for the contact at this account</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                            <p>String length: inclusive between 1 and 50</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">SiteIds</td>
+                <td class="parameter-documentation">
+                    <p>List of all child site&#39;s Ids.</p>
+                </td>
+                <td class="parameter-type">
+                            Collection of integer
+
+
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+        <h3>Response Formats</h3>
+
+<div>
+        <h4 class="sample-header">application/json, text/json</h4>
+        <div class="sample-content">
+            <span>
+                <b>Sample:</b>
+            </span>
+<pre class="wrapped">
+[
+  {
+    &quot;Id&quot;: 1,
+    &quot;ManagementOrganizationId&quot;: 2,
+    &quot;ClientOrganizationId&quot;: 1,
+    &quot;Name&quot;: &quot;sample string 3&quot;,
+    &quot;ContactName&quot;: &quot;sample string 4&quot;,
+    &quot;ContactEmail&quot;: &quot;sample string 5&quot;,
+    &quot;SiteIds&quot;: [
+      1,
+      2
+    ]
+  },
+  {
+    &quot;Id&quot;: 1,
+    &quot;ManagementOrganizationId&quot;: 2,
+    &quot;ClientOrganizationId&quot;: 1,
+    &quot;Name&quot;: &quot;sample string 3&quot;,
+    &quot;ContactName&quot;: &quot;sample string 4&quot;,
+    &quot;ContactEmail&quot;: &quot;sample string 5&quot;,
+    &quot;SiteIds&quot;: [
+      1,
+      2
+    ]
+  }
+]
+</pre>
+
+        </div>
+        <h4 class="sample-header">application/xml, text/xml</h4>
+        <div class="sample-content">
+            <span>
+                <b>Sample:</b>
+            </span>
+<pre class="wrapped">
+&lt;ArrayOfApiAccount xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://schemas.datacontract.org/2004/07/ReportingWebService.DTOs&quot;&gt;
+  &lt;ApiAccount&gt;
+    &lt;ClientOrganizationId&gt;1&lt;/ClientOrganizationId&gt;
+    &lt;ContactEmail&gt;sample string 5&lt;/ContactEmail&gt;
+    &lt;ContactName&gt;sample string 4&lt;/ContactName&gt;
+    &lt;Id&gt;1&lt;/Id&gt;
+    &lt;ManagementOrganizationId&gt;2&lt;/ManagementOrganizationId&gt;
+    &lt;Name&gt;sample string 3&lt;/Name&gt;
+    &lt;SiteIds xmlns:d3p1=&quot;http://schemas.microsoft.com/2003/10/Serialization/Arrays&quot;&gt;
+      &lt;d3p1:int&gt;1&lt;/d3p1:int&gt;
+      &lt;d3p1:int&gt;2&lt;/d3p1:int&gt;
+    &lt;/SiteIds&gt;
+  &lt;/ApiAccount&gt;
+  &lt;ApiAccount&gt;
+    &lt;ClientOrganizationId&gt;1&lt;/ClientOrganizationId&gt;
+    &lt;ContactEmail&gt;sample string 5&lt;/ContactEmail&gt;
+    &lt;ContactName&gt;sample string 4&lt;/ContactName&gt;
+    &lt;Id&gt;1&lt;/Id&gt;
+    &lt;ManagementOrganizationId&gt;2&lt;/ManagementOrganizationId&gt;
+    &lt;Name&gt;sample string 3&lt;/Name&gt;
+    &lt;SiteIds xmlns:d3p1=&quot;http://schemas.microsoft.com/2003/10/Serialization/Arrays&quot;&gt;
+      &lt;d3p1:int&gt;1&lt;/d3p1:int&gt;
+      &lt;d3p1:int&gt;2&lt;/d3p1:int&gt;
+    &lt;/SiteIds&gt;
+  &lt;/ApiAccount&gt;
+&lt;/ArrayOfApiAccount&gt;
+</pre>
+
+        </div>
+        <h4 class="sample-header">application/vnd.api+json</h4>
+        <div class="sample-content">
+            <span>
+                <b>Sample:</b>
+            </span>
+<pre class="wrapped">
+{
+  &quot;data&quot;: [
+    {
+      &quot;type&quot;: &quot;account&quot;,
+      &quot;id&quot;: 1,
+      &quot;attributes&quot;: {
+        &quot;management-organization-id&quot;: 2,
+        &quot;client-organization-id&quot;: 1,
+        &quot;name&quot;: &quot;sample string 3&quot;,
+        &quot;contact-name&quot;: &quot;sample string 4&quot;,
+        &quot;contact-email&quot;: &quot;sample string 5&quot;,
+        &quot;site-ids&quot;: [
+          1,
+          2
+        ]
+      },
+      &quot;relationships&quot;: {
+        &quot;client-organization&quot;: {
+          &quot;data&quot;: {
+            &quot;type&quot;: &quot;organization&quot;,
+            &quot;id&quot;: 1
+          }
+        },
+        &quot;management-organization&quot;: {
+          &quot;data&quot;: {
+            &quot;type&quot;: &quot;organization&quot;,
+            &quot;id&quot;: 1
+          }
+        }
+      }
+    }
+  ],
+  &quot;included&quot;: [
+    {
+      &quot;type&quot;: &quot;organization&quot;,
+      &quot;id&quot;: 1,
+      &quot;attributes&quot;: {
+        &quot;name&quot;: &quot;sample string 2&quot;,
+        &quot;contact-name&quot;: &quot;sample string 3&quot;,
+        &quot;contact-email&quot;: &quot;sample string 4&quot;,
+        &quot;is-pin-required&quot;: true,
+        &quot;are-lockers-supported&quot;: true,
+        &quot;locker-history-enabled&quot;: true,
+        &quot;billing-address&quot;: &quot;sample string 8&quot;,
+        &quot;free-vend-enabled&quot;: true,
+        &quot;virtual-machines-enabled&quot;: true,
+        &quot;adjust-count-for-web-returns&quot;: true,
+        &quot;account-ids&quot;: [
+          1,
+          2
+        ],
+        &quot;type&quot;: &quot;Manager&quot;
+      }
+    }
+  ]
+}
+</pre>
+
+        </div>
+</div>
+</div>
+
+    </section>
+</div>
+
+</body>
+
+<!-- Mirrored from localhost:57018/Help/Api/GET-api-organizations-orgId-accounts_page_size by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:45 GMT -->
+</html>

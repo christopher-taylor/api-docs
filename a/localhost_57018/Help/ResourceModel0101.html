@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from localhost:57018/Help/ResourceModel?modelName=ApiAccount by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title></title>
+    
+</head>
+<body>
+
+<link type="text/css" href="../Areas/HelpPage/HelpPage.css" rel="stylesheet"/>
+<div id="body" class="help-page">
+    <section class="featured">
+        <div class="content-wrapper">
+            <p>
+                <a href="../Help.html">Help Page Home</a>
+            </p>
+        </div>
+    </section>
+    <h1>ApiAccount</h1>
+    <p>Class that defines an account, which lives in the location hiearchy
+                Accounts live under Organizations, and provide options for segregating Passport access to machines
+                and client report access</p>
+    <section class="content-wrapper main-content clear-fix">
+            <table class="help-page-table">
+        <thead>
+        <tr>
+            <th>Name</th><th>Description</th><th>Type</th><th>Additional information</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="parameter-name">Id</td>
+                <td class="parameter-documentation">
+                    <p>Account ID</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ManagementOrganizationId</td>
+                <td class="parameter-documentation">
+                    <p>ID of the management organization this site belongs to</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ClientOrganizationId</td>
+                <td class="parameter-documentation">
+                    <p>ID of the client organization this site belongs to</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Name</td>
+                <td class="parameter-documentation">
+                    <p>Account name</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                            <p>String length: inclusive between 1 and 100</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ContactName</td>
+                <td class="parameter-documentation">
+                    <p>Full Name of the contact for this account</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                            <p>String length: inclusive between 1 and 50</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ContactEmail</td>
+                <td class="parameter-documentation">
+                    <p>Email Address for the contact at this account</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                            <p>String length: inclusive between 1 and 50</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">SiteIds</td>
+                <td class="parameter-documentation">
+                    <p>List of all child site&#39;s Ids.</p>
+                </td>
+                <td class="parameter-type">
+                            Collection of integer
+
+
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    </section>
+</div>
+
+</body>
+
+<!-- Mirrored from localhost:57018/Help/ResourceModel?modelName=ApiAccount by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:47 GMT -->
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from localhost:57018/Help/Api/GET-api-organizations-orgID-machines-mchID-inventory_organizationId_machineId_page_size by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>GET api/organizations/{orgID}/machines/{mchID}/inventory?organizationId={organizationId}&amp;machineId={machineId}&amp;page={page}&amp;size={size}</title>
+    
+</head>
+<body>
+
+
+
+<link type="text/css" href="../../Areas/HelpPage/HelpPage.css" rel="stylesheet"/>
+<div id="body" class="help-page">
+    <section class="featured">
+        <div class="content-wrapper">
+            <p>
+                <a href="../../Help.html">Help Page Home</a>
+            </p>
+        </div>
+    </section>
+    <section class="content-wrapper main-content clear-fix">
+        
+<h1>GET api/organizations/{orgID}/machines/{mchID}/inventory?organizationId={organizationId}&amp;machineId={machineId}&amp;page={page}&amp;size={size}</h1>
+<div>
+    <p>Get the inventory for a machine.</p>
+
+    <h2>Request Information</h2>
+
+    <h3>URI Parameters</h3>
+        <table class="help-page-table">
+        <thead>
+        <tr>
+            <th>Name</th><th>Description</th><th>Type</th><th>Additional information</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="parameter-name">organizationId</td>
+                <td class="parameter-documentation">
+                    <p>The ID of the organization the machine belongs to.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">machineId</td>
+                <td class="parameter-documentation">
+                    <p>The ID of the machine whose inventory you want to retrieve.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">page</td>
+                <td class="parameter-documentation">
+                    <p>Which page of records you&#39;d like to retrieve.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Default value is 1</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">size</td>
+                <td class="parameter-documentation">
+                    <p>How many records should be retrieved per page.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Default value is 50</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">orgID</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">mchID</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h3>Body Parameters</h3>
+
+    <p></p>
+
+        <p>None.</p>
+
+
+    <h2>Response Information</h2>
+
+    <h3>Resource Description</h3>
+
+    <p>A list of MachineInventories, or a list of errors that occured during their retrieval.</p>
+
+        Collection of <a href="../ResourceModel2876.html?modelName=ApiMachineInventory">ApiMachineInventory</a>
+
+
+    <table class="help-page-table">
+        <thead>
+        <tr>
+            <th>Name</th><th>Description</th><th>Type</th><th>Additional information</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="parameter-name">Id</td>
+                <td class="parameter-documentation">
+                    <p>Slot ID</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">MachineId</td>
+                <td class="parameter-documentation">
+                    <p>ID of the machine this inventory object belongs to</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Bin</td>
+                <td class="parameter-documentation">
+                    <p>Bin number</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProductId</td>
+                <td class="parameter-documentation">
+                    <p>The product in the slot.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Product</td>
+                <td class="parameter-documentation">
+                    <p>product associated with this selection</p>
+                </td>
+                <td class="parameter-type">
+                    <a href="../ResourceModel47e8.html?modelName=DbProduct">DbProduct</a>
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">OnHand</td>
+                <td class="parameter-documentation">
+                    <p>Number currently on hand</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">RefillTo</td>
+                <td class="parameter-documentation">
+                    <p>Refill to</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Depth</td>
+                <td class="parameter-documentation">
+                    <p>Slot/bin depth</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">AlertAt</td>
+                <td class="parameter-documentation">
+                    <p>Number of items to send alert at</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">RestockAt</td>
+                <td class="parameter-documentation">
+                    <p>When to refill slot/bin</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">NonConsignedCount</td>
+                <td class="parameter-documentation">
+                    <p>Non-Consigned Count</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">IsActive</td>
+                <td class="parameter-documentation">
+                    <p>If slot/bin is active</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+        <h3>Response Formats</h3>
+
+<div>
+        <h4 class="sample-header">application/json</h4>
+        <div class="sample-content">
+            <span>
+                <b>Sample:</b>
+            </span>
+    <div class="warning-message-container">
+        <p>An exception has occurred while using the formatter &#39;JsonMediaTypeFormatter&#39; to generate sample for media type &#39;application/json&#39;. Exception message: Self referencing loop detected for property &#39;DbMachine&#39; with type &#39;VN.EF.Tool.DbMachine&#39;. Path &#39;[0].Product.DbProductItems[0].DbOrganization.OrgCliIdFk[0].DbSites[0].DbMachines[0].DbSlots[0]&#39;.</p>
+    </div>
+    <pre>" + filterContext.Exception.StackTrace + "</pre>
+
+        </div>
+        <h4 class="sample-header">text/json</h4>
+        <div class="sample-content">
+            <span>
+                <b>Sample:</b>
+            </span>
+    <div class="warning-message-container">
+        <p>An exception has occurred while using the formatter &#39;JsonMediaTypeFormatter&#39; to generate sample for media type &#39;text/json&#39;. Exception message: Self referencing loop detected for property &#39;DbMachine&#39; with type &#39;VN.EF.Tool.DbMachine&#39;. Path &#39;[0].Product.DbProductItems[0].DbOrganization.OrgCliIdFk[0].DbSites[0].DbMachines[0].DbSlots[0]&#39;.</p>
+    </div>
+    <pre>" + filterContext.Exception.StackTrace + "</pre>
+
+        </div>
+        <h4 class="sample-header">application/xml</h4>
+        <div class="sample-content">
+            <span>
+                <b>Sample:</b>
+            </span>
+    <div class="warning-message-container">
+        <p>An exception has occurred while using the formatter &#39;XmlMediaTypeFormatter&#39; to generate sample for media type &#39;application/xml&#39;. Exception message: Object graph for type &#39;System.Collections.Generic.List`1[[VN.EF.Tool.DbEmployee, VN.EF.Tool, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]&#39; contains cycles and cannot be serialized if reference tracking is disabled.</p>
+    </div>
+    <pre>" + filterContext.Exception.StackTrace + "</pre>
+
+        </div>
+        <h4 class="sample-header">text/xml</h4>
+        <div class="sample-content">
+            <span>
+                <b>Sample:</b>
+            </span>
+    <div class="warning-message-container">
+        <p>An exception has occurred while using the formatter &#39;XmlMediaTypeFormatter&#39; to generate sample for media type &#39;text/xml&#39;. Exception message: Object graph for type &#39;System.Collections.Generic.List`1[[VN.EF.Tool.DbEmployee, VN.EF.Tool, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]&#39; contains cycles and cannot be serialized if reference tracking is disabled.</p>
+    </div>
+    <pre>" + filterContext.Exception.StackTrace + "</pre>
+
+        </div>
+</div>
+</div>
+
+    </section>
+</div>
+
+</body>
+
+<!-- Mirrored from localhost:57018/Help/Api/GET-api-organizations-orgID-machines-mchID-inventory_organizationId_machineId_page_size by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:42 GMT -->
+</html>

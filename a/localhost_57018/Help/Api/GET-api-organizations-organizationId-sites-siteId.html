@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from localhost:57018/Help/Api/GET-api-organizations-organizationId-sites-siteId by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>GET api/organizations/{organizationId}/sites/{siteId}</title>
+    
+</head>
+<body>
+
+
+
+<link type="text/css" href="../../Areas/HelpPage/HelpPage.css" rel="stylesheet"/>
+<div id="body" class="help-page">
+    <section class="featured">
+        <div class="content-wrapper">
+            <p>
+                <a href="../../Help.html">Help Page Home</a>
+            </p>
+        </div>
+    </section>
+    <section class="content-wrapper main-content clear-fix">
+        
+<h1>GET api/organizations/{organizationId}/sites/{siteId}</h1>
+<div>
+    <p>Retrieve a single site via its ID.</p>
+
+    <h2>Request Information</h2>
+
+    <h3>URI Parameters</h3>
+        <table class="help-page-table">
+        <thead>
+        <tr>
+            <th>Name</th><th>Description</th><th>Type</th><th>Additional information</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="parameter-name">organizationId</td>
+                <td class="parameter-documentation">
+                    <p>The ID of the organization the requested site belongs to.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">siteId</td>
+                <td class="parameter-documentation">
+                    <p>The ID of the site you want to retrieve.</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h3>Body Parameters</h3>
+
+    <p></p>
+
+        <p>None.</p>
+
+
+    <h2>Response Information</h2>
+
+    <h3>Resource Description</h3>
+
+    <p>The requested site.</p>
+
+<a href="../ResourceModeladef.html?modelName=ApiSite">ApiSite</a>
+    <table class="help-page-table">
+        <thead>
+        <tr>
+            <th>Name</th><th>Description</th><th>Type</th><th>Additional information</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="parameter-name">Id</td>
+                <td class="parameter-documentation">
+                    <p>Site ID</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">AccountId</td>
+                <td class="parameter-documentation">
+                    <p>ID of the account this site belongs to</p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Name</td>
+                <td class="parameter-documentation">
+                    <p>Site name</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                            <p>String length: inclusive between 0 and 100</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ContactName</td>
+                <td class="parameter-documentation">
+                    <p>Full name of the contact at this site, if any</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>String length: inclusive between 0 and 50</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ContactEmail</td>
+                <td class="parameter-documentation">
+                    <p>Contact email associated with the site, if any</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>String length: inclusive between 0 and 50</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ContactPhone</td>
+                <td class="parameter-documentation">
+                    <p>Contact phone number associated with the site, if any</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>String length: inclusive between 0 and 13</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ContactFax</td>
+                <td class="parameter-documentation">
+                    <p>Contact FAX Number associated with the site, if any</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>String length: inclusive between 0 and 13</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ContactAddress</td>
+                <td class="parameter-documentation">
+                    <p>Contact address associated with the site, if any</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>String length: inclusive between 0 and 300</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">TimeZone</td>
+                <td class="parameter-documentation">
+                    <p>Site TimeZone</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Visible</td>
+                <td class="parameter-documentation">
+                    <p>Site visibility flag</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">ProximityCardMask</td>
+                <td class="parameter-documentation">
+                    <p>Proximity Card MASK.  X for ignore and # for include.</p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>String length: inclusive between 0 and 30</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">EnableDualValidation</td>
+                <td class="parameter-documentation">
+                    <p>Enable dual validation at this site</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">EnablePersonalPurchase</td>
+                <td class="parameter-documentation">
+                    <p>Enable personal purchases at this site
+                Currently not active</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">EnableOfflinePurchase</td>
+                <td class="parameter-documentation">
+                    <p>Enable offline transactions</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">EnableFingerprint</td>
+                <td class="parameter-documentation">
+                    <p>Enable fingerprint processing</p>
+                </td>
+                <td class="parameter-type">
+                    boolean
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">MachineIds</td>
+                <td class="parameter-documentation">
+                    <p>A list of IDs of the associated child ApiMachines.</p>
+                </td>
+                <td class="parameter-type">
+                            Collection of integer
+
+
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+        <h3>Response Formats</h3>
+
+<div>
+        <h4 class="sample-header">application/json, text/json</h4>
+        <div class="sample-content">
+            <span>
+                <b>Sample:</b>
+            </span>
+<pre class="wrapped">
+{
+  &quot;Id&quot;: 1,
+  &quot;AccountId&quot;: 2,
+  &quot;Name&quot;: &quot;sample string 3&quot;,
+  &quot;ContactName&quot;: &quot;sample string 4&quot;,
+  &quot;ContactEmail&quot;: &quot;sample string 5&quot;,
+  &quot;ContactPhone&quot;: &quot;sample string 6&quot;,
+  &quot;ContactFax&quot;: &quot;sample string 7&quot;,
+  &quot;ContactAddress&quot;: &quot;sample string 8&quot;,
+  &quot;TimeZone&quot;: &quot;sample string 9&quot;,
+  &quot;Visible&quot;: true,
+  &quot;ProximityCardMask&quot;: &quot;sample string 11&quot;,
+  &quot;EnableDualValidation&quot;: true,
+  &quot;EnablePersonalPurchase&quot;: true,
+  &quot;EnableOfflinePurchase&quot;: true,
+  &quot;EnableFingerprint&quot;: true,
+  &quot;MachineIds&quot;: [
+    1,
+    2
+  ]
+}
+</pre>
+
+        </div>
+        <h4 class="sample-header">application/xml, text/xml</h4>
+        <div class="sample-content">
+            <span>
+                <b>Sample:</b>
+            </span>
+<pre class="wrapped">
+&lt;ApiSite xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://schemas.datacontract.org/2004/07/ReportingWebService.DTOs&quot;&gt;
+  &lt;AccountId&gt;2&lt;/AccountId&gt;
+  &lt;ContactAddress&gt;sample string 8&lt;/ContactAddress&gt;
+  &lt;ContactEmail&gt;sample string 5&lt;/ContactEmail&gt;
+  &lt;ContactFax&gt;sample string 7&lt;/ContactFax&gt;
+  &lt;ContactName&gt;sample string 4&lt;/ContactName&gt;
+  &lt;ContactPhone&gt;sample string 6&lt;/ContactPhone&gt;
+  &lt;EnableDualValidation&gt;true&lt;/EnableDualValidation&gt;
+  &lt;EnableFingerprint&gt;true&lt;/EnableFingerprint&gt;
+  &lt;EnableOfflinePurchase&gt;true&lt;/EnableOfflinePurchase&gt;
+  &lt;EnablePersonalPurchase&gt;true&lt;/EnablePersonalPurchase&gt;
+  &lt;Id&gt;1&lt;/Id&gt;
+  &lt;MachineIds xmlns:d2p1=&quot;http://schemas.microsoft.com/2003/10/Serialization/Arrays&quot;&gt;
+    &lt;d2p1:int&gt;1&lt;/d2p1:int&gt;
+    &lt;d2p1:int&gt;2&lt;/d2p1:int&gt;
+  &lt;/MachineIds&gt;
+  &lt;Name&gt;sample string 3&lt;/Name&gt;
+  &lt;ProximityCardMask&gt;sample string 11&lt;/ProximityCardMask&gt;
+  &lt;TimeZone&gt;sample string 9&lt;/TimeZone&gt;
+  &lt;Visible&gt;true&lt;/Visible&gt;
+&lt;/ApiSite&gt;
+</pre>
+
+        </div>
+        <h4 class="sample-header">application/vnd.api+json</h4>
+        <div class="sample-content">
+            <span>
+                <b>Sample:</b>
+            </span>
+<pre class="wrapped">
+{
+  &quot;jsonapi&quot;: {
+    &quot;version&quot;: &quot;1.0&quot;
+  },
+  &quot;data&quot;: {
+    &quot;type&quot;: &quot;site&quot;,
+    &quot;id&quot;: 1,
+    &quot;attributes&quot;: {
+      &quot;account-id&quot;: 2,
+      &quot;name&quot;: &quot;sample string 3&quot;,
+      &quot;contact-name&quot;: &quot;sample string 4&quot;,
+      &quot;contact-email&quot;: &quot;sample string 5&quot;,
+      &quot;contact-phone&quot;: &quot;sample string 6&quot;,
+      &quot;contact-fax&quot;: &quot;sample string 7&quot;,
+      &quot;contact-address&quot;: &quot;sample string 8&quot;,
+      &quot;time-zone&quot;: &quot;sample string 9&quot;,
+      &quot;visible&quot;: true,
+      &quot;proximity-card-mask&quot;: &quot;sample string 11&quot;,
+      &quot;enable-dual-validation&quot;: true,
+      &quot;enable-personal-purchase&quot;: true,
+      &quot;enable-offline-purchase&quot;: true,
+      &quot;enable-fingerprint&quot;: true,
+      &quot;machine-ids&quot;: [
+        1,
+        2
+      ]
+    },
+    &quot;relationships&quot;: {
+      &quot;account&quot;: {
+        &quot;data&quot;: {
+          &quot;type&quot;: &quot;account&quot;,
+          &quot;id&quot;: 1
+        }
+      }
+    }
+  },
+  &quot;included&quot;: [
+    {
+      &quot;type&quot;: &quot;account&quot;,
+      &quot;id&quot;: 1,
+      &quot;attributes&quot;: {
+        &quot;management-organization-id&quot;: 2,
+        &quot;client-organization-id&quot;: 1,
+        &quot;name&quot;: &quot;sample string 3&quot;,
+        &quot;contact-name&quot;: &quot;sample string 4&quot;,
+        &quot;contact-email&quot;: &quot;sample string 5&quot;,
+        &quot;site-ids&quot;: [
+          1,
+          2
+        ]
+      },
+      &quot;relationships&quot;: {
+        &quot;client-organization&quot;: {
+          &quot;data&quot;: {
+            &quot;type&quot;: &quot;organization&quot;,
+            &quot;id&quot;: 1
+          }
+        },
+        &quot;management-organization&quot;: {
+          &quot;data&quot;: {
+            &quot;type&quot;: &quot;organization&quot;,
+            &quot;id&quot;: 1
+          }
+        }
+      }
+    },
+    {
+      &quot;type&quot;: &quot;organization&quot;,
+      &quot;id&quot;: 1,
+      &quot;attributes&quot;: {
+        &quot;name&quot;: &quot;sample string 2&quot;,
+        &quot;contact-name&quot;: &quot;sample string 3&quot;,
+        &quot;contact-email&quot;: &quot;sample string 4&quot;,
+        &quot;is-pin-required&quot;: true,
+        &quot;are-lockers-supported&quot;: true,
+        &quot;locker-history-enabled&quot;: true,
+        &quot;billing-address&quot;: &quot;sample string 8&quot;,
+        &quot;free-vend-enabled&quot;: true,
+        &quot;virtual-machines-enabled&quot;: true,
+        &quot;adjust-count-for-web-returns&quot;: true,
+        &quot;account-ids&quot;: [
+          1,
+          2
+        ],
+        &quot;type&quot;: &quot;Manager&quot;
+      }
+    }
+  ]
+}
+</pre>
+
+        </div>
+</div>
+</div>
+
+    </section>
+</div>
+
+</body>
+
+<!-- Mirrored from localhost:57018/Help/Api/GET-api-organizations-organizationId-sites-siteId by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:44 GMT -->
+</html>

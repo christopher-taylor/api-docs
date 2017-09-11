@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from localhost:57018/Help/Api/GET-api-organizations-organizationId-report-transactions_page_size_startDate_endDate_passportId_accountId_siteId_machineId by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>GET api/organizations/{organizationId}/report/transactions?page={page}&amp;size={size}&amp;startDate={startDate}&amp;endDate={endDate}&amp;passportId={passportId}&amp;accountId={accountId}&amp;siteId={siteId}&amp;machineId={machineId}</title>
+    
+</head>
+<body>
+
+
+
+<link type="text/css" href="../../Areas/HelpPage/HelpPage.css" rel="stylesheet"/>
+<div id="body" class="help-page">
+    <section class="featured">
+        <div class="content-wrapper">
+            <p>
+                <a href="../../Help.html">Help Page Home</a>
+            </p>
+        </div>
+    </section>
+    <section class="content-wrapper main-content clear-fix">
+        
+<h1>GET api/organizations/{organizationId}/report/transactions?page={page}&amp;size={size}&amp;startDate={startDate}&amp;endDate={endDate}&amp;passportId={passportId}&amp;accountId={accountId}&amp;siteId={siteId}&amp;machineId={machineId}</h1>
+<div>
+    <p>Return a set of transactions</p>
+
+    <h2>Request Information</h2>
+
+    <h3>URI Parameters</h3>
+        <table class="help-page-table">
+        <thead>
+        <tr>
+            <th>Name</th><th>Description</th><th>Type</th><th>Additional information</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="parameter-name">organizationId</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">page</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">size</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">startDate</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">endDate</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    string
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Required</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">passportId</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Default value is 0</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">accountId</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Default value is 0</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">siteId</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Default value is 0</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">machineId</td>
+                <td class="parameter-documentation">
+                    <p></p>
+                </td>
+                <td class="parameter-type">
+                    integer
+
+
+                </td>
+                <td class="parameter-annotations">
+                            <p>Default value is 0</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h3>Body Parameters</h3>
+
+    <p></p>
+
+        <p>None.</p>
+
+
+    <h2>Response Information</h2>
+
+    <h3>Resource Description</h3>
+
+    <p></p>
+
+        Collection of <a href="../ResourceModel4b8e.html?modelName=ApiTransaction">ApiTransaction</a>
+
+
+    <table class="help-page-table">
+        <thead>
+        <tr>
+            <th>Name</th><th>Description</th><th>Type</th><th>Additional information</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="parameter-name">ApiMachine</td>
+                <td class="parameter-documentation">
+                    <p>Historical ApiMachine Master Record</p>
+                </td>
+                <td class="parameter-type">
+                    <a href="../ResourceModel3cb7.html?modelName=ApiMachineMaster">ApiMachineMaster</a>
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Product</td>
+                <td class="parameter-documentation">
+                    <p>Historical Product associated with the transaction</p>
+                </td>
+                <td class="parameter-type">
+                    <a href="../ResourceModel5e21.html?modelName=ApiProductMaster">ApiProductMaster</a>
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Purchaser</td>
+                <td class="parameter-documentation">
+                    <p>Purchaser Information</p>
+                </td>
+                <td class="parameter-type">
+                    <a href="../ResourceModelf04a.html?modelName=PassportSubmodel">PassportSubmodel</a>
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">Verifier</td>
+                <td class="parameter-documentation">
+                    <p>Verifier information - at machine</p>
+                </td>
+                <td class="parameter-type">
+                    <a href="../ResourceModelf04a.html?modelName=PassportSubmodel">PassportSubmodel</a>
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">SiteVerifier</td>
+                <td class="parameter-documentation">
+                    <p>Verifier information - at site</p>
+                </td>
+                <td class="parameter-type">
+                    <a href="../ResourceModelf04a.html?modelName=PassportSubmodel">PassportSubmodel</a>
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">SaleInfo</td>
+                <td class="parameter-documentation">
+                    <p>Contains historically relevant information about the sale.</p>
+                </td>
+                <td class="parameter-type">
+                    <a href="../ResourceModelf10a.html?modelName=SaleSubmodel">SaleSubmodel</a>
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="parameter-name">AllocationData</td>
+                <td class="parameter-documentation">
+                    <p>ApiAllocationCode code data</p>
+                </td>
+                <td class="parameter-type">
+                            Collection of <a href="../ResourceModel79d5.html?modelName=ApiAllocationCode">ApiAllocationCode</a>
+
+
+
+                </td>
+                <td class="parameter-annotations">
+                        <p>None.</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+        <h3>Response Formats</h3>
+
+<div>
+        <h4 class="sample-header">application/json</h4>
+        <div class="sample-content">
+            <span>
+                <b>Sample:</b>
+            </span>
+    <div class="warning-message-container">
+        <p>An exception has occurred while using the formatter &#39;JsonMediaTypeFormatter&#39; to generate sample for media type &#39;application/json&#39;. Exception message: A member with the name &#39;Manufacturer&#39; already exists on &#39;ReportingWebService.DTOs.ApiProductMaster&#39;. Use the JsonPropertyAttribute to specify another name.</p>
+    </div>
+    <pre>" + filterContext.Exception.StackTrace + "</pre>
+
+        </div>
+        <h4 class="sample-header">text/json</h4>
+        <div class="sample-content">
+            <span>
+                <b>Sample:</b>
+            </span>
+    <div class="warning-message-container">
+        <p>An exception has occurred while using the formatter &#39;JsonMediaTypeFormatter&#39; to generate sample for media type &#39;text/json&#39;. Exception message: A member with the name &#39;Manufacturer&#39; already exists on &#39;ReportingWebService.DTOs.ApiProductMaster&#39;. Use the JsonPropertyAttribute to specify another name.</p>
+    </div>
+    <pre>" + filterContext.Exception.StackTrace + "</pre>
+
+        </div>
+        <h4 class="sample-header">application/xml, text/xml</h4>
+        <div class="sample-content">
+            <span>
+                <b>Sample:</b>
+            </span>
+<pre class="wrapped">
+&lt;ArrayOfApiTransaction xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://schemas.datacontract.org/2004/07/ReportingWebService.DTOs&quot;&gt;
+  &lt;ApiTransaction&gt;
+    &lt;AllocationData&gt;
+      &lt;ApiAllocationCode&gt;
+        &lt;Code&gt;sample string 1&lt;/Code&gt;
+        &lt;Description&gt;sample string 3&lt;/Description&gt;
+        &lt;Item&gt;sample string 2&lt;/Item&gt;
+      &lt;/ApiAllocationCode&gt;
+      &lt;ApiAllocationCode&gt;
+        &lt;Code&gt;sample string 1&lt;/Code&gt;
+        &lt;Description&gt;sample string 3&lt;/Description&gt;
+        &lt;Item&gt;sample string 2&lt;/Item&gt;
+      &lt;/ApiAllocationCode&gt;
+    &lt;/AllocationData&gt;
+    &lt;ApiMachine&gt;
+      &lt;AccountName&gt;sample string 2&lt;/AccountName&gt;
+      &lt;Id&gt;1&lt;/Id&gt;
+      &lt;MachineLocation&gt;sample string 5&lt;/MachineLocation&gt;
+      &lt;MachineName&gt;sample string 4&lt;/MachineName&gt;
+      &lt;SiteName&gt;sample string 3&lt;/SiteName&gt;
+    &lt;/ApiMachine&gt;
+    &lt;Product i:nil=&quot;true&quot; /&gt;
+    &lt;Purchaser xmlns:d3p1=&quot;http://schemas.datacontract.org/2004/07/ReportingWebService.DTOs.Submodels&quot;&gt;
+      &lt;d3p1:FullName&gt;sample string 1&lt;/d3p1:FullName&gt;
+      &lt;d3p1:Id&gt;2&lt;/d3p1:Id&gt;
+      &lt;d3p1:Number&gt;sample string 3&lt;/d3p1:Number&gt;
+    &lt;/Purchaser&gt;
+    &lt;SaleInfo xmlns:d3p1=&quot;http://schemas.datacontract.org/2004/07/ReportingWebService.DTOs.Submodels&quot;&gt;
+      &lt;d3p1:Cost&gt;1&lt;/d3p1:Cost&gt;
+      &lt;d3p1:HistoricalData1&gt;sample string 11&lt;/d3p1:HistoricalData1&gt;
+      &lt;d3p1:HistoricalData2&gt;sample string 12&lt;/d3p1:HistoricalData2&gt;
+      &lt;d3p1:Id&gt;2&lt;/d3p1:Id&gt;
+      &lt;d3p1:Price&gt;3&lt;/d3p1:Price&gt;
+      &lt;d3p1:QuantityRemaining&gt;6&lt;/d3p1:QuantityRemaining&gt;
+      &lt;d3p1:QuantityReturned&gt;9&lt;/d3p1:QuantityReturned&gt;
+      &lt;d3p1:QuantityTaken&gt;13&lt;/d3p1:QuantityTaken&gt;
+      &lt;d3p1:SelectionNumber&gt;sample string 8&lt;/d3p1:SelectionNumber&gt;
+      &lt;d3p1:TransactionInitiatedAt&gt;2017-09-11T14:14:34.8696888-07:00&lt;/d3p1:TransactionInitiatedAt&gt;
+      &lt;d3p1:WasAPersonalSale&gt;true&lt;/d3p1:WasAPersonalSale&gt;
+      &lt;d3p1:WasAReturnSale&gt;true&lt;/d3p1:WasAReturnSale&gt;
+      &lt;d3p1:WasAWebsiteGeneratedSale&gt;true&lt;/d3p1:WasAWebsiteGeneratedSale&gt;
+      &lt;d3p1:WasAnOfflineSale&gt;true&lt;/d3p1:WasAnOfflineSale&gt;
+    &lt;/SaleInfo&gt;
+    &lt;SiteVerifier xmlns:d3p1=&quot;http://schemas.datacontract.org/2004/07/ReportingWebService.DTOs.Submodels&quot;&gt;
+      &lt;d3p1:FullName&gt;sample string 1&lt;/d3p1:FullName&gt;
+      &lt;d3p1:Id&gt;2&lt;/d3p1:Id&gt;
+      &lt;d3p1:Number&gt;sample string 3&lt;/d3p1:Number&gt;
+    &lt;/SiteVerifier&gt;
+    &lt;Verifier xmlns:d3p1=&quot;http://schemas.datacontract.org/2004/07/ReportingWebService.DTOs.Submodels&quot;&gt;
+      &lt;d3p1:FullName&gt;sample string 1&lt;/d3p1:FullName&gt;
+      &lt;d3p1:Id&gt;2&lt;/d3p1:Id&gt;
+      &lt;d3p1:Number&gt;sample string 3&lt;/d3p1:Number&gt;
+    &lt;/Verifier&gt;
+  &lt;/ApiTransaction&gt;
+  &lt;ApiTransaction&gt;
+    &lt;AllocationData&gt;
+      &lt;ApiAllocationCode&gt;
+        &lt;Code&gt;sample string 1&lt;/Code&gt;
+        &lt;Description&gt;sample string 3&lt;/Description&gt;
+        &lt;Item&gt;sample string 2&lt;/Item&gt;
+      &lt;/ApiAllocationCode&gt;
+      &lt;ApiAllocationCode&gt;
+        &lt;Code&gt;sample string 1&lt;/Code&gt;
+        &lt;Description&gt;sample string 3&lt;/Description&gt;
+        &lt;Item&gt;sample string 2&lt;/Item&gt;
+      &lt;/ApiAllocationCode&gt;
+    &lt;/AllocationData&gt;
+    &lt;ApiMachine&gt;
+      &lt;AccountName&gt;sample string 2&lt;/AccountName&gt;
+      &lt;Id&gt;1&lt;/Id&gt;
+      &lt;MachineLocation&gt;sample string 5&lt;/MachineLocation&gt;
+      &lt;MachineName&gt;sample string 4&lt;/MachineName&gt;
+      &lt;SiteName&gt;sample string 3&lt;/SiteName&gt;
+    &lt;/ApiMachine&gt;
+    &lt;Product i:nil=&quot;true&quot; /&gt;
+    &lt;Purchaser xmlns:d3p1=&quot;http://schemas.datacontract.org/2004/07/ReportingWebService.DTOs.Submodels&quot;&gt;
+      &lt;d3p1:FullName&gt;sample string 1&lt;/d3p1:FullName&gt;
+      &lt;d3p1:Id&gt;2&lt;/d3p1:Id&gt;
+      &lt;d3p1:Number&gt;sample string 3&lt;/d3p1:Number&gt;
+    &lt;/Purchaser&gt;
+    &lt;SaleInfo xmlns:d3p1=&quot;http://schemas.datacontract.org/2004/07/ReportingWebService.DTOs.Submodels&quot;&gt;
+      &lt;d3p1:Cost&gt;1&lt;/d3p1:Cost&gt;
+      &lt;d3p1:HistoricalData1&gt;sample string 11&lt;/d3p1:HistoricalData1&gt;
+      &lt;d3p1:HistoricalData2&gt;sample string 12&lt;/d3p1:HistoricalData2&gt;
+      &lt;d3p1:Id&gt;2&lt;/d3p1:Id&gt;
+      &lt;d3p1:Price&gt;3&lt;/d3p1:Price&gt;
+      &lt;d3p1:QuantityRemaining&gt;6&lt;/d3p1:QuantityRemaining&gt;
+      &lt;d3p1:QuantityReturned&gt;9&lt;/d3p1:QuantityReturned&gt;
+      &lt;d3p1:QuantityTaken&gt;13&lt;/d3p1:QuantityTaken&gt;
+      &lt;d3p1:SelectionNumber&gt;sample string 8&lt;/d3p1:SelectionNumber&gt;
+      &lt;d3p1:TransactionInitiatedAt&gt;2017-09-11T14:14:34.8696888-07:00&lt;/d3p1:TransactionInitiatedAt&gt;
+      &lt;d3p1:WasAPersonalSale&gt;true&lt;/d3p1:WasAPersonalSale&gt;
+      &lt;d3p1:WasAReturnSale&gt;true&lt;/d3p1:WasAReturnSale&gt;
+      &lt;d3p1:WasAWebsiteGeneratedSale&gt;true&lt;/d3p1:WasAWebsiteGeneratedSale&gt;
+      &lt;d3p1:WasAnOfflineSale&gt;true&lt;/d3p1:WasAnOfflineSale&gt;
+    &lt;/SaleInfo&gt;
+    &lt;SiteVerifier xmlns:d3p1=&quot;http://schemas.datacontract.org/2004/07/ReportingWebService.DTOs.Submodels&quot;&gt;
+      &lt;d3p1:FullName&gt;sample string 1&lt;/d3p1:FullName&gt;
+      &lt;d3p1:Id&gt;2&lt;/d3p1:Id&gt;
+      &lt;d3p1:Number&gt;sample string 3&lt;/d3p1:Number&gt;
+    &lt;/SiteVerifier&gt;
+    &lt;Verifier xmlns:d3p1=&quot;http://schemas.datacontract.org/2004/07/ReportingWebService.DTOs.Submodels&quot;&gt;
+      &lt;d3p1:FullName&gt;sample string 1&lt;/d3p1:FullName&gt;
+      &lt;d3p1:Id&gt;2&lt;/d3p1:Id&gt;
+      &lt;d3p1:Number&gt;sample string 3&lt;/d3p1:Number&gt;
+    &lt;/Verifier&gt;
+  &lt;/ApiTransaction&gt;
+&lt;/ArrayOfApiTransaction&gt;
+</pre>
+
+        </div>
+</div>
+</div>
+
+    </section>
+</div>
+
+</body>
+
+<!-- Mirrored from localhost:57018/Help/Api/GET-api-organizations-organizationId-report-transactions_page_size_startDate_endDate_passportId_accountId_siteId_machineId by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2017 21:27:42 GMT -->
+</html>
